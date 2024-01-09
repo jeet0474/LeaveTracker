@@ -1,0 +1,240 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f; /* Dark background color */
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#buttons button {
+  padding: 8px 16px;
+  margin: 0 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for subjects */
+.subject {
+  background-color: #2f2f2f;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subject h2 {
+  margin-top: 0;
+}
+
+.subject button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.subject button:hover {
+  background-color: #45a049;
+}
+
+/* Add/adjust styles as needed */
+/* ... (existing styles) ... */
+.subject div {
+  margin-top: 10px;
+}
+.subject input {
+  width: 100px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+#removeModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#removeModalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.subject-checkbox {
+  margin-bottom: 10px;
+}
+
+/* Additional styles for checkboxes and remove button in the removal list */
+.subject-checkbox {
+  margin-bottom: 10px;
+  background-color: #2f2f2f; /* Background color for the removal list */
+  padding: 10px; /* Added padding for better visual separation */
+}
+
+.subject-checkbox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+}
+
+.subject-checkbox input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+.subject-checkbox input[type="checkbox"]:checked::before {
+  content: '\2714'; /* Unicode character for checkmark */
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  margin-left: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subject-checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  color: white; /* Text color for labels */
+}
+
+.subject-checkbox label:hover {
+  text-decoration: underline;
+}
+
+#removeModalContent button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+#removeModalContent button:hover {
+  background-color: #45a049;
+}
+
+#removeModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#removeModalContent {
+  background-color: #1f1f1f; /* Background color for the modal content */
+  padding: 20px;
+  border-radius: 5px;
+  color: white; /* Text color for the modal content */
+}
+
+/* ... (previous styles) ... */
+
+/* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #1f1f1f;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 5px;
+  position: relative;
+  color: white; /* Text color */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white; /* Change the close icon color */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #2f2f2f; /* Darker background color */
+  color: white; /* Text color */
+}
+
+.add-button {
+  padding: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
