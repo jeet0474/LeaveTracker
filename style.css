@@ -193,8 +193,8 @@ h1 {
   background-color: #1f1f1f;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 30%;
+  border: none;
+  width: 70%;
   border-radius: 5px;
   position: relative;
   color: white; /* Text color */
