@@ -1,3 +1,21 @@
+// Function to check the password
+function checkPassword() {
+  var passwordInput = document.getElementById('passwordInput').value;
+  if (passwordInput === 'jeet6789') {
+    // Password is correct, hide the password modal and proceed
+    document.getElementById('passwordModal').style.display = 'none';
+  } else {
+    // Password is incorrect, show an alert and clear the input
+    alert('Incorrect password. Please try again.');
+    document.getElementById('passwordInput').value = '';
+  }
+}
+
+// On page load, show the password modal
+window.onload = function() {
+  document.getElementById('passwordModal').style.display = 'block';
+};
+
 // Function to add leaves
 function addLeaves(subjectId, inputId) {
   var countElement = document.getElementById(subjectId);
